@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my cv</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./s1.css">
+    <style>
+      #view-cv {
+        width: 100%;
+        height: 100vh;
+      }
+    </style>
+</head>
+<body>
+  <div class="container" >
+    <header  class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+      <a href="./index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <img src="./my-logo.svg" alt="my-logo" height="60px" id="my-logo-img">
+        <span class="fs-4"> MNo90 </span>
+      </a>
+
+      <ul class="nav nav-underline">
+        <li class="nav-item btn btn-dark">
+          <a class="nav-link text-white" aria-current="page" href="./index.html">back tohome</a>
+        </li>
+        <li class="nav-item btn btn-dark">
+          <a class="nav-link text-white" aria-current="page" href="https://github.com/mnder3ii">vist Github</a>
+        </li>
+        <li class="nav-item btn btn-dark">
+          <a class="nav-link text-white" aria-current="page" href="./cv.html">view CV</a>
+        </li>
+        <li class="nav-item btn btn-dark">
+          <a class="nav-link text-white" aria-current="page" href="./projects.html">projects</a>
+        </li>
+        <li class="nav-item btn btn-dark">
+          <a class="nav-link text-white" aria-current="page" href="#contact_me">contact</a>
+        </li>
+      </ul>
+    </header>
+  </div>
+
+    <section id="content">
+      <div class="container ">
+        <div class="p-5 text-center pt-5 pb-5">
+            <img src="./journal-bookmark-fill.svg" alt="" height="70px">
+          <h1 class="text-body-emphasis">Final year project the first part</h1>
+          <p>why we made our project: <br>
+            With the advancements in automation technology nowadays, the involvement of Artificial
+            Intelligence (AI) and Machine Learning (ML) in everyday tasks is becoming a reality. The
+            use of such advanced technologies leads to task fulfillment cost and time efficiency. As
+            such, the use of robotic devices for automated task fulfillment is becoming a must
+            nowadays. This project focuses on the design and implementation of an autonomous
+            window cleaning robot. Such a robotic device will replace the way windows are
+            traditionally cleaned with the aid of humans and make it more time and cost efficient to
+            use the proposed robotic device, especially in high-rise building scenarios. The proposed
+            robotic device uses ML algorithms that provide path planning mechanisms prior to
+            initiation and while running. Obstacle avoidance methods are also incorporated to ensure
+            that path routes are planned to avoid any known obstacles. Obstacles that are found in
+            real-time would initiate the path planning algorithm to run iteratively to find more
+            optimal paths in terms of time-efficiency. A plethora of sensors are used to support the
+            robotic device in path detection and movement.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+    <iframe id="view-cv" src="./final report( grop 3) (1).pdf" frameborder="0"></iframe>
+    <hr>
+
+
+
+    <section id="contact_me">
+
+      <div id="contact_me" class="px-4 pt-5 my-5 text-center border-bottom">
+        <h1 class="display-4 fw-bold text-body-emphasis pb-4">Contact Me</h1>
+        <div class="col-lg-6 mx-auto">
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+            <button type="button" class="btn btn-dark btn-lg px-4 me-sm-3" id="callButton" onclick="callMe()">Call Me</button>
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4" id="emailButton" onclick="sendEmail()">Send Email</button>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+
+
+    <section id="footer">
+
+        <div class="container">
+          <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+              <li class="nav-item"><a href="./index.html" class="nav-link px-2 text-body-secondary">bact to Home</a></li>
+              <li class="nav-item"><a href="https://github.com/mnder3ii" class="nav-link px-2 text-body-secondary">vist MY Github</a></li>
+            </ul>
+            <p class="text-center text-body-secondary">© 2023 mnder3ii</p>
+          </footer>
+        </div>
+    </section>
+
+    <button id="scrollToTopButton"><img src="./upup.svg" alt="" height="20px"></button>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+       
+    <SCript>
+      window.addEventListener('scroll', function() {
+    var scrollToTopButton = document.getElementById('scrollToTopButton');
+    if (window.scrollY > 300) {
+      scrollToTopButton.style.display = 'block';
+    } else {
+      scrollToTopButton.style.display = 'none';
+    }
+  });
+  
+  document.getElementById('scrollToTopButton').addEventListener('click', function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+  
+    </SCript>
+  
+    <script>
+          function callMe() {
+            window.location.href = 'tel:0096594011258'; // Replace with your phone number
+          }
+    </script>
+  
+    <script>
+          function sendEmail() {
+            window.location.href = 'mailto:mohammad.nas1@icloud.com?subject=Hello&body=I wanted to reach out to you...'; // Replace with your email address, subject, and body
+          }
+    </script>
+
+  </body>
+</html>

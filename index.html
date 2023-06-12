@@ -11,29 +11,31 @@
 <body>
 
 
-  <div class="container" >
-    <header  class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+
+  <div class="container">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom main-header">
       <a href="./index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
         <img src="./my-logo.svg" alt="my-logo" height="60px" id="my-logo-img">
-        <span class="fs-4"> MNo90 </span>
+        <span class="fs-4">MNo90</span>
       </a>
 
       <ul class="nav nav-underline">
         <li class="nav-item btn btn-dark">
-          <a class="nav-link text-white" aria-current="page" href="https://github.com/mnder3ii">Github</a>
+          <a class="nav-link text-white" aria-current="page" href="https://github.com/mnder3ii">Visit Github</a>
         </li>
         <li class="nav-item btn btn-dark">
-          <a class="nav-link text-white" aria-current="page" href="./cv.html">CV</a>
+          <a class="nav-link text-white" aria-current="page" href="./cv.html">View CV</a>
         </li>
         <li class="nav-item btn btn-dark">
-          <a class="nav-link text-white" aria-current="page" href="#projects">projects</a>
+          <a class="nav-link text-white" aria-current="page" href="#projects">Projects</a>
         </li>
         <li class="nav-item btn btn-dark">
-          <a class="nav-link text-white" aria-current="page" href="#contact_me">contact</a>
+          <a class="nav-link text-white" aria-current="page" href="#contact_me">Contact</a>
         </li>
       </ul>
     </header>
   </div>
+
 
   <section id="about-website">
 
@@ -41,13 +43,13 @@
       <div class="container ">
           <div class="p-5 text-center pt-5 pb-0">
               <img src="./chat-left-dots.svg" alt="" height="70px">
-            <h1 class="text-body-emphasis">a quick note</h1>
+            <h1 class="text-body-emphasis" id="note" >A Quick Note</h1>
             <p class="col-lg-8 mx-auto fs-5 text-muted">
               this website was made while am still taking the full stack front end course 
               so all the items formating layouts and information on this website is from what 
               I have learned so far from the cousre so if this website is lacking is some parts its 
               because this is a project that will be updated and improved over time...
-              <br> Note date : ( 11 / 6 / 2023)
+              <br> Date on Note : ( 13 / 6 / 2023)
             </p>
             <div class="d-inline-flex gap-2 mb-5">
               <a href="#contact_me" class="btn btn-dark" tabindex="-1" role="button" aria-disabled="true">click here to contact</a>
@@ -389,14 +391,81 @@
 
   </section>
 
-    <section id="contact_me">
+  <section id="uni-projects">
+
+    <section id="hero" class="herocolr">
+      <div class="container ">
+        <div class="p-5 text-center pt-5 pb-0">
+          <h1 class="text-body-emphasis">Universty Projects</h1>
+
+            <div class="album py-5 bg-body-tertiary">
+              <div class="container">
+          
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      
+                  <div class="col">
+                    <div class="card shadow-sm">
+                      <img src="./7.png" alt="" >
+                      <div class="card-body">
+                        <div class="col-lg-6 mx-auto">
+                          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center ">
+                            <a href="./fyp1.html" class="btn btn-dark" tabindex="-1" role="button" aria-disabled="true">view Documentation</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card shadow-sm">
+                      <img src="./8.png" alt="" id="cards-imgs">
+                      <div class="card-body">
+                        <div class="col-lg-6 mx-auto">
+                          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                            <a href="fyp2.html" class="btn btn-dark" tabindex="-1" role="button" aria-disabled="true">view Documentation</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card shadow-sm">
+                      <img src="./9.png" alt="">
+                      <div class="card-body">
+                        <div class="col-lg-6 mx-auto">
+                          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                            <a href="mob-app.html" class="btn btn-dark" tabindex="-1" role="button" aria-disabled="true">view Documentation</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+        </div>
+
+      </div>
+        
+        
+  
+    </section>
+
+
+
+
+  </section>
+
+
+  <section id="contact_me">
 
       <div id="contact_me" class="px-4 pt-5 my-5 text-center border-bottom">
         <h1 class="display-4 fw-bold text-body-emphasis">Contact Me</h1>
         <div class="col-lg-6 mx-auto">
           <p class="lead mb-4">the email may change over time but as of next month hopfully the mail that will 
             be there will be permanint <br> so if I fail to cantact you feel free to call or send another email... 
-            <br> Note date : ( 11 / 6 / 2023)</p>
+            <br> Date of Note : ( 13 / 6 / 2023)</p>
           <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
             <button type="button" class="btn btn-dark btn-lg px-4 me-sm-3" id="callButton" onclick="callMe()">Call Me</button>
             <button type="button" class="btn btn-outline-secondary btn-lg px-4" id="emailButton" onclick="sendEmail()">Send Email</button>
@@ -408,15 +477,14 @@
           </div>
         </div>
       </div>
-    </section>
+  </section>
 
-    <section id="footer">
+  <section id="footer">
 
       <div class="container">
 
         <footer class="py-3 my-4">
           <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">back to top</a></li>
             <li class="nav-item"><a href="https://github.com/mnder3ii" class="nav-link px-2 text-body-secondary">vist MY Github</a></li>
             <li class="nav-item"><a href="./cv.html" class="nav-link px-2 text-body-secondary">view My-CV</a></li>
           </ul>
@@ -424,21 +492,41 @@
         </footer>
       </div>
 
-    </section>
+  </section>
 
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-      
-      <script>
+  <button id="scrollToTopButton"><img src="./upup.svg" alt="" height="20px"></button>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+     
+  <SCript>
+    window.addEventListener('scroll', function() {
+  var scrollToTopButton = document.getElementById('scrollToTopButton');
+  if (window.scrollY > 300) {
+    scrollToTopButton.style.display = 'block';
+  } else {
+    scrollToTopButton.style.display = 'none';
+  }
+});
+
+document.getElementById('scrollToTopButton').addEventListener('click', function() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+  </SCript>
+
+  <script>
         function callMe() {
           window.location.href = 'tel:0096594011258'; // Replace with your phone number
         }
-      </script>
+  </script>
 
-      <script>
+  <script>
         function sendEmail() {
           window.location.href = 'mailto:mohammad.nas1@icloud.com?subject=Hello&body=I wanted to reach out to you...'; // Replace with your email address, subject, and body
         }
-      </script>
+  </script>
 
 
 </body>
