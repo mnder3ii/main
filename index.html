@@ -13,6 +13,32 @@
 
 
   <div class="container">
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+      <div class="col-md-3 mb-2 mb-md-0">
+        <a href="./index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+          <img src="./my-logo.svg" alt="my-logo" height="60px" id="my-logo-img">
+          <span class="fs-4">MNo90</span>
+        </a>
+      </div>
+
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <button id="git_h" class="btn btn-sm btn-outline-secondary mx-2 hdhd1" type="button">GitHub</button>
+        <button id="o_cv" class="btn btn-sm btn-outline-secondary mx-2 hdhd1" type="button">View CV</button>
+        <button id="o_pro" class="btn btn-sm btn-outline-secondary mx-2 hdhd1" type="button">Projects</button>
+        <button class="btn btn-sm btn-outline-secondary mx-2 hdhd1" type="button" onclick="redirectToContact()">
+        Contact me
+        </button>
+        
+        
+      </ul>
+
+    </header>
+  </div>
+
+  <div id="cv-container"></div>
+
+<!--
+  <div class="container" >
     <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom main-header">
       <a href="./index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
         <img src="./my-logo.svg" alt="my-logo" height="60px" id="my-logo-img">
@@ -33,29 +59,34 @@
           <a class="nav-link text-white" aria-current="page" href="#contact_me">Contact</a>
         </li>
       </ul>
+
     </header>
   </div>
+-->
 
 
   <section id="about-website">
+    <section id="c">
 
-    <section id="hero" class="herocolr">
-      <div class="container ">
-          <div class="p-5 text-center pt-5 pb-0">
-              <img src="./chat-left-dots.svg" alt="" height="70px">
-            <h1 class="text-body-emphasis" id="note" >A Quick Note</h1>
-            <p class="col-lg-8 mx-auto fs-5 text-muted">
-              this website was made while am still taking the full stack front end course 
-              so all the items formating layouts and information on this website is from what 
-              I have learned so far from the cousre so if this website is lacking is some parts its 
-              because this is a project that will be updated and improved over time...
-              <br> Date on Note : ( 26 / 6 / 2023)
-            </p>
-            <div class="d-inline-flex gap-2 mb-5">
-              <a href="#contact_me" class="btn btn-dark" tabindex="-1" role="button" aria-disabled="true">click here to contact</a>
-            </div>
+      <div id="hero1" class="container my-5">
+        <div class="position-relative p-3 text-center text-muted ">
+          <button id="close_note" type="button" class="position-absolute top-0 end-0 p-3 m-3 btn-close bg-secondary bg-opacity-10 rounded-pill" aria-label="Close"></button>
+          <div class="p-1 text-center pt-5 pb-0">
+            <img src="./chat-left-dots.svg" alt="" height="70px">
+          <h1 class="text-body-emphasis" id="note" >A Quick Note</h1>
+          <p class="col-lg-8 mx-auto fs-5 text-muted">
+            this website was made while am still taking the full stack front end course 
+            so all the items formating layouts and information on this website is from what 
+            I have learned so far from the cousre so if this website is lacking is some parts its 
+            because this is a project that will be updated and improved over time...
+            <br> Date on Note : ( 26 / 6 / 2023)
+          </p>
+          <div class="d-inline-flex gap-2 mb-5">
+            <a href="#contact_me" class="btn btn-dark" tabindex="-1" role="button" aria-disabled="true">click here to contact</a>
           </div>
         </div>
+        </div>
+      </div>
   </section>
 
   </section>
@@ -241,18 +272,18 @@
 
     <section id="hero" class="herocolr">
       <div class="container ">
-        <div class="p-5 text-center pt-5 pb-0">
+        <div class="p-5 text-center pt-5 pb-0 px-2">
           <h1 class="text-body-emphasis">projects</h1>
             <div class="d-inline-flex gap-2 mb-5">
                 <a href="./projects.html" class="btn btn-dark" tabindex="-1" role="button" aria-disabled="true">vist the projects page</a>
             </div>
 
-            <div class="album py-5 bg-body-tertiary">
+            <div class="album py-5 proj_bk">
               <div class="container">
           
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
       
-                  <div class="col">
+                  <div class="col pb-5">
                     <div class="card shadow-sm">
                       <img src="./1.png" alt="" >
                       <div class="card-body">
@@ -264,7 +295,8 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col">
+
+                  <div class="col pb-5">
                     <div class="card shadow-sm">
                       <img src="./4.png" alt="" id="cards-imgs">
                       <div class="card-body">
@@ -276,7 +308,8 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col">
+
+                  <div class="col pb-5">
                     <div class="card shadow-sm">
                       <img src="./12.PNG" alt="">
                       <div class="card-body">
@@ -289,7 +322,10 @@
                     </div>
                   </div>
 
-                  <div class="col">
+
+
+
+                  <div class="col pb-5">
                     <div class="card shadow-sm">
                       <img src="./6.png" alt="">
                       <div class="card-body">
@@ -301,7 +337,8 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col">
+
+                  <div class="col pb-5">
                     <div class="card shadow-sm">
                       <img src="./10.PNG" alt="">
                       <div class="card-body">
@@ -313,7 +350,8 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col">
+
+                  <div class="col pb-5">
                     <div class="card shadow-sm">
                       <img src="./11.PNG" alt="">
                       <div class="card-body">
@@ -325,6 +363,7 @@
                       </div>
                     </div>
                   </div>
+
 
       
       <!-- 
@@ -409,6 +448,7 @@
                       <img src="./7.png" alt="" >
                       <div class="card-body">
                         <div class="col-lg-6 mx-auto">
+                          <p>Final year project part one</p>
                           <div class="d-grid gap-2 d-sm-flex justify-content-sm-center ">
                             <a href="./fyp1.html" class="btn btn-dark" tabindex="-1" role="button" aria-disabled="true">view Documentation</a>
                           </div>
@@ -421,6 +461,7 @@
                       <img src="./8.png" alt="" id="cards-imgs">
                       <div class="card-body">
                         <div class="col-lg-6 mx-auto">
+                          <p>Final year project part two</p>
                           <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
                             <a href="fyp2.html" class="btn btn-dark" tabindex="-1" role="button" aria-disabled="true">view Documentation</a>
                           </div>
@@ -433,6 +474,7 @@
                       <img src="./9.PNG" alt="">
                       <div class="card-body">
                         <div class="col-lg-6 mx-auto">
+                          <p>Mobile application Dev</p>
                           <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
                             <a href="mob-app.html" class="btn btn-dark" tabindex="-1" role="button" aria-disabled="true">view Documentation</a>
                           </div>
@@ -462,8 +504,8 @@
   
   <section id="youtube">
     <hr>
-    <h1 class="text-body-emphasis text-center py-5 my-5">YouTube</h1>
-    <iframe class="pt-4 my4" width="100%" height="650px" src="https://www.youtube.com/embed/CR3lefgFSHc?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <h1 class="text-center py-5 my-5" style="color: white;">YouTube</h1>
+    <iframe class="pt-4 my4 pb-3" width="100%" height="650px" src="https://www.youtube.com/embed/CR3lefgFSHc?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     <hr>
   </section>
 
@@ -483,7 +525,7 @@
         </div>
         <div class="overflow-hidden" style="max-height: 30vh;">
           <div class="container px-5">
-            <img src="./quino-al-4SNUcHPiC8c-unsplash.jpg" alt="" height="300px">
+            <img src="./quino-al-4SNUcHPiC8c-unsplash.jpg" alt="" style="max-width: 100%; width: 100%;">
           </div>
         </div>
       </div>
@@ -497,8 +539,8 @@
 
         <footer class="py-3 my-4">
           <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-            <li class="nav-item"><a href="https://github.com/mnder3ii" class="nav-link px-2 text-body-secondary">vist MY Github</a></li>
-            <li class="nav-item"><a href="./cv.html" class="nav-link px-2 text-body-secondary">view My-CV</a></li>
+            <button id="git_h1" class="btn btn-sm btn-outline-secondary mx-2 hdhd1" type="button">GitHub</button>
+            <button id="o_cv1" class="btn btn-sm btn-outline-secondary mx-2 hdhd1" type="button">View CV</button>    
           </ul>
           <p class="text-center text-body-secondary">© 2023 mnder3ii</p>
         </footer>
@@ -509,35 +551,13 @@
   <button id="scrollToTopButton"><img src="./upup.svg" alt="" height="20px"></button>
 
 
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-     
-  <SCript>
-    window.addEventListener('scroll', function() {
-  var scrollToTopButton = document.getElementById('scrollToTopButton');
-  if (window.scrollY > 300) {
-    scrollToTopButton.style.display = 'block';
-  } else {
-    scrollToTopButton.style.display = 'none';
-  }
-});
-
-document.getElementById('scrollToTopButton').addEventListener('click', function() {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-});
-
-  </SCript>
-
+  <script src="./index.js"></script>
   <script>
-        function callMe() {
-          window.location.href = 'tel:0096594011258'; // Replace with your phone number
-        }
-  </script>
-
-  <script>
-        function sendEmail() {
-          window.location.href = 'mailto:mohammad.nas1@icloud.com?subject=Hello&body=I wanted to reach out to you...'; // Replace with your email address, subject, and body
-        }
+    function redirectToContact() {
+      window.location.href = "#contact_me";
+    }
   </script>
 
 
