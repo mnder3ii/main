@@ -12,30 +12,54 @@
 
 
 
-  <div class="container">
+  <div class="container" id="hdhd112">
     <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-      <div class="col-md-3 mb-2 mb-md-0">
+      
+      
+      <div class="col-md-3 col-sm-6 col- mb-2 mb-md-0">
         <a href="./index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
           <img src="./my-logo.svg" alt="my-logo" height="60px" id="my-logo-img">
           <span class="fs-4">MNo90</span>
         </a>
       </div>
 
-      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0" id="hh1">
         <button id="git_h" class="btn btn-sm btn-outline-secondary mx-2 hdhd1" type="button">GitHub</button>
         <button id="o_cv" class="btn btn-sm btn-outline-secondary mx-2 hdhd1" type="button">View CV</button>
         <button id="o_pro" class="btn btn-sm btn-outline-secondary mx-2 hdhd1" type="button">Projects</button>
         <button class="btn btn-sm btn-outline-secondary mx-2 hdhd1" type="button" onclick="redirectToContact()">
         Contact me
         </button>
-        
-        
       </ul>
-
     </header>
   </div>
 
-  <div id="cv-container"></div>
+  <div class="smlo-cont" id="d">
+
+      <div id="dd">
+          <img src="./my-logo.png" alt="" id="log"> <span style="margin-left: 5px; size: 20px;"> MNo90</span>
+      </div>
+
+    <div id="ddd">
+
+      <div  class=" dropdown list-icon">
+        <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="./list.svg" alt="mdo" width="32" height="32" class="rounded-circle">
+        </a>
+        <ul class="dropdown-menu text-small shadow" >
+          <li><a class="dropdown-item tp11" href="#">New project...</a></li>
+          <li><a class="dropdown-item tp11" href="#">Settings</a></li>
+          <li><a class="dropdown-item tp11" href="#contact_me">Contact me</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item tp11" href="https://github.com/mnder3ii">Visit GitHub</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+
+  </div>
+
 
 <!--
   <div class="container" >
@@ -557,6 +581,28 @@
       window.location.href = "#contact_me";
     }
   </script>
+
+<script>
+function toggleList() {
+  var hdr = document.getElementById("hdhd112")
+  var hdrsml = document.getElementById("d")
+  
+  if (window.innerWidth < 944) {
+    hdr.style.display = "none";
+    hdrsml.style.display = "flex";
+    $("#about-website").hide();
+  } else {
+    hdr.style.display = "block";
+    hdrsml.style.display = "none";
+    $("#about-website").fadeIn();
+  }
+}
+
+
+  // Call the toggleList function initially and whenever the window is resized
+toggleList();
+  window.addEventListener("resize", toggleList);
+</script>
 
 
 </body>
