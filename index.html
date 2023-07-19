@@ -47,6 +47,10 @@
           <img src="./list.svg" alt="mdo" width="32" height="32" class="rounded-circle">
         </a>
         <ul class="dropdown-menu text-small shadow" >
+          <li><a class="dropdown-item tp11" href="./cv.html">View CV</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item tp11" href="https://github.com/mnder3ii">Visit GitHub <img src="./github.svg" alt="" height="25px" style="padding-left: 10px; padding-bottom: 3px;"></a></li>
+          <li><hr class="dropdown-divider"></li>
           <li><a class="dropdown-item tp11" href="#projects">Projects</a></li>
           <li><hr class="dropdown-divider"></li>
           <li><a class="dropdown-item tp11" href="#uni-projects">Universty Projects</a></li>
@@ -54,8 +58,7 @@
           <li><a class="dropdown-item tp11" href="#youtube">YouTube</a></li>
           <li><hr class="dropdown-divider"></li>
           <li><a class="dropdown-item tp11" href="#contact_me">Contact me</a></li>
-          <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item tp11" href="https://github.com/mnder3ii">Visit GitHub</a></li>
+          
         </ul>
       </div>
 
@@ -63,6 +66,13 @@
 
 
   </div>
+
+  <div id="ani-smol">
+    <div id="bgfrani">
+      <a href="./cv.html" class="btn btn-dark" tabindex="-1" role="button" aria-disabled="true">View CV</a>
+    </div>
+  </div>
+
 
 
 <!--
@@ -107,7 +117,7 @@
             so all the items formating layouts and information on this website is from what 
             I have learned so far from the cousre so if this website is lacking is some parts its 
             because this is a project that will be updated and improved over time...
-            <br> Date on Note : ( 18 / 7 / 2023)
+            <br> Date on Note : ( 26 / 6 / 2023)
           </p>
           <div class="d-inline-flex gap-2 mb-5">
             <a href="#contact_me" class="btn btn-dark" tabindex="-1" role="button" aria-disabled="true">click here to contact</a>
@@ -196,7 +206,7 @@
     <section id="skils" class="herocolr2">
             
         <div class="container px-4 py-5" id="hanging-icons">
-            <h2 class="pb-2 border-bottom"><img src="./mortarboard-fill.svg" alt="" class="afaf">Full web Development </h2>
+            <h2 class="pb-2 border-bottom"><img src="./mortarboard-fill.svg" alt="" class="afaf">After Universty : full web Developer</h2>
             <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
               <div class="col d-flex align-items-start">
                 <div class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
@@ -580,7 +590,7 @@
         <div class="col-lg-6 mx-auto">
           <p class="lead mb-4">the email may change over time but as of next month hopfully the mail that will 
             be there will be permanint <br> so if I fail to cantact you feel free to call or send another email... 
-            <br> Date of Note : ( 18 / 7 / 2023)</p>
+            <br> Date of Note : ( 26 / 6 / 2023)</p>
           <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
             <button type="button" class="btn btn-dark btn-lg px-4 me-sm-3" id="callButton" onclick="callMe()">Call Me</button>
             <button type="button" class="btn btn-outline-secondary btn-lg px-4" id="emailButton" onclick="sendEmail()">Send Email</button>
@@ -623,14 +633,17 @@
 function toggleList() {
   var hdr = document.getElementById("hdhd112")
   var hdrsml = document.getElementById("d")
+  var ano = document.getElementById("ani-smol")
   
-  if (window.innerWidth < 944) {
+  if (window.innerWidth < 768) {
     hdr.style.display = "none";
     hdrsml.style.display = "flex";
+    ano.style.display = "flex";
     $("#about-website").hide();
   } else {
     hdr.style.display = "block";
     hdrsml.style.display = "none";
+    ano.style.display = "none";
     $("#about-website").fadeIn();
   }
 }

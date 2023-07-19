@@ -155,7 +155,7 @@ html {
     display: block; /* Show the dropdown menu on hover */
 }
 
-@media (min-width: 944px) {
+@media (min-width: 768px) {
     .list-icon {
       display: none; /* Hide the list icon when screen size is 944px or greater */
     }
@@ -193,4 +193,20 @@ html {
 #log{
     height: 45px;
     max-height: 70px;
+}
+
+#ani-smol{
+    height: 40vh;
+    background-image: url(./Untitled\ design.gif);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#bgfrani{
+    margin-bottom: 13%;
+    
 }
