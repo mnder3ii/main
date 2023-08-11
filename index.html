@@ -507,10 +507,12 @@
   
   <script>
 
-    $(window).on("load",function () { 
-      $(".ld-wpr").fadeOut();
-      $("#website-all-wraper").fadeIn();
-    });
+    $(window).on("load", function () {
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+    $(".ld-wpr").fadeOut(function () {
+    $("#website-all-wraper").fadeIn();
+  });
+});
 
   </script>
 
