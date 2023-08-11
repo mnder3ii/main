@@ -508,11 +508,12 @@
   <script>
 
     $(window).on("load", function () {
-    $("html, body").animate({ scrollTop: 0 }, 30);
-    $(".ld-wpr").fadeOut(function () {
+    $("html, body").animate({ scrollTop: 0 }, 30);  
+  $(".ld-wpr").fadeOut().promise().done(function () {
     $("#website-all-wraper").fadeIn();
   });
 });
+
 
   </script>
 
