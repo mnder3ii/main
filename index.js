@@ -20,7 +20,7 @@ function callMe() {
 }
 
 function sendEmail() {
-    window.location.href = 'mailto:mohammad.nas1@icloud.com?subject=Hello&body=I wanted to reach out to you...'; // Replace with your email address, subject, and body
+    window.location.href = 'mailto:Contact@mno90.com?subject=Hello&body=I wanted to reach out to you...'; // Replace with your email address, subject, and body
   }
 
 $("#git_h").click(function() {
