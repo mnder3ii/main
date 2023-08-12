@@ -516,12 +516,20 @@
   
   <script>
 
-$(window).on("load", function () {
-    $(".ld-wpr").fadeOut(function () {
-        $("#website-all-wraper").fadeIn();
+    $(window).on("load", function () {
+        $("body").css("overflow", "hidden"); // Disable scrolling while loader is shown
+        
+        $(".ld-wpr").fadeIn(function () {
+            // Loader is now visible, do any necessary actions
+            // Once ready, fade out the loader and show the content
+            setTimeout(function () {
+                $(".ld-wpr").fadeOut(function () {
+                    $("#website-all-wraper").fadeIn();
+                    $("body").css("overflow", ""); // Enable scrolling again
+                });
+            }, 1000); // Change the delay to the desired duration
+        });
     });
-});
-
 
 
 

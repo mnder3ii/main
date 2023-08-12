@@ -722,3 +722,8 @@ html {
     }
   }
   
+/* Your existing styles... */
+
+#website-all-wraper {
+  display: none;
+}
