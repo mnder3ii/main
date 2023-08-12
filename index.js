@@ -1,5 +1,14 @@
+$("#v-a-wrp").hide();
+
 $("#close_note").on("click", function () {
-    $("#about-website").slideUp();
+  $("#hero1").slideUp(function () {
+      $("#v-a-wrp").fadeIn("slow");
+  });
+});
+
+$("#v-gain").on("click", function () {
+    $("#v-a-wrp").hide();
+    $("#hero1").slideDown();
 });
 
 window.addEventListener('scroll', function() {

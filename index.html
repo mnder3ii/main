@@ -94,6 +94,8 @@
   <section id="about-website">
     <section id="c">
 
+      
+
       <div id="hero1" class="container my-5">
         <div class="position-relative p-3 text-center text-muted ">
           <button id="close_note" type="button" class="position-absolute top-0 end-0 p-3 m-3 btn-close bg-secondary bg-opacity-10 rounded-pill" aria-label="Close"></button>
@@ -113,6 +115,13 @@
         </div>
         </div>
       </div>
+
+      <div id="v-a-wrp">
+            <div id="v-gain" class="d-inline-flex gap-2 mb-5">
+        <a class="btn btn-dark" tabindex="-1" role="button" aria-disabled="true">click here to view the note again</a>
+              </div>
+      </div>
+
   </section>
 
   </section>
@@ -507,12 +516,13 @@
   
   <script>
 
-    $(window).on("load", function () {
-    $("html, body").scrollTop(0);  
-    $(".ld-wpr").fadeOut().promise().done(function () {
-    $("#website-all-wraper").fadeIn();
-  });
+$(window).on("load", function () {
+    $(".ld-wpr").fadeOut(function () {
+        $("#website-all-wraper").fadeIn();
+    });
 });
+
+
 
 
   </script>
