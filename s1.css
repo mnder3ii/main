@@ -1,11 +1,56 @@
+.hidden {
+  opacity: 0;
+  filter: blur(15px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hidden {
+    /* Adjust the styles for reduced motion here */
+    /* For example, you might remove or reduce the transition effect */
+    transition: none; /* Remove the transition for reduced motion */
+  }
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.ss1:nth-child(2){
+  transition-delay: 200ms;
+}
+.ss1:nth-child(3){
+  transition-delay: 300ms;
+}
+/*-----*/
+
+.ss2:nth-child(2){
+  transition-delay: 200ms;
+}
+.ss2:nth-child(3){
+  transition-delay: 300ms;
+}
+.ss2:nth-child(4){
+  transition-delay: 400ms;
+}
+.ss2:nth-child(5){
+  transition-delay: 500ms;
+}
+
+
 
 
 #projects{
-    background-image: url(./alessio-soggetti-gdE-5Oui1Y0-unsplash.jpg);
+    background-image: url(./stefan-grage-Y4MKctPwIrw-unsplash.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
 #uni-projects{
     margin-top: 30px;
      background-color: white;
@@ -116,10 +161,11 @@ html {
 }
 
 .proj_bk{
-    border: 5px solid white;
+    border: 5px solid black;
     background-color: transparent;
-    backdrop-filter: blur(70px);
+    backdrop-filter: blur(1);
     border-bottom: none;
+    border-radius: 15px 15px 0px 0px;
 }
 
 
@@ -164,19 +210,31 @@ html {
 }
 
 
-#d{
-    width: 100%vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    padding: 20px 0px;
+#d {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff; /* Set your desired background color */
+  z-index: 1000; /* Adjust the z-index as needed */
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.175); /* Add a shadow for a visual effect */
 }
+
 
 #dd{
     margin: 10px 20px;
     padding-left: 5%;
     padding-right: 5%;
 }
+
+#dd span {
+  font-size: 80%; /* 20% smaller than the original size */
+}
+
 
 #ddd{
     margin: 10px 20px;
@@ -191,21 +249,11 @@ html {
     max-height: 70px;
 }
 
-#ani-smol{
-    height: 40vh;
-    background-image: url(./Untitled\ design.gif);
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+#ani-smol {
+  height: auto; /* Remove the max-height property */
+  overflow: hidden;
 }
 
-#bgfrani{
-    margin-bottom: 13%;
-    
-}
 
 #youtube{
  display: flex;
@@ -727,3 +775,61 @@ html {
 #website-all-wraper {
   display: none;
 }
+
+
+ul.timeline {
+  list-style-type: none;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+/* Timeline vertical line */
+ul.timeline:before {
+  content: ' ';
+  background: #fff;
+  display: inline-block;
+  position: absolute;
+  left: 16px;
+  width: 4px;
+  height: 100%;
+  z-index: 400;
+  border-radius: 1rem;
+}
+
+li.timeline-item {
+  margin: 20px 0;
+}
+
+/* Timeline item arrow */
+.timeline-arrow {
+  border-top: 0.5rem solid transparent;
+  border-right: 0.5rem solid #fff;
+  border-bottom: 0.5rem solid transparent;
+  display: block;
+  position: absolute;
+  left: 2rem;
+}
+
+
+/*
+*
+* ==========================================
+* FOR DEMO PURPOSES
+* ==========================================
+*
+*/
+
+#tts {
+  background-image: url(./alessio-soggetti-gdE-5Oui1Y0-unsplash.jpg);
+  height: auto;
+}
+
+.text-gray {
+  color: #999;
+}
+
+
+#custom-cards{
+  height: auto;
+}
+
