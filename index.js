@@ -49,9 +49,15 @@ document.getElementById('scrollToTopButton').addEventListener('click', function(
     window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
+//function callMe() {
+//    window.location.href = 'tel:00965'; // Replace with your phone number
+//}
+
 function callMe() {
-    window.location.href = 'tel:0096594011258'; // Replace with your phone number
+    alert('sorry I can not pick up the phone right now. Try emailing me instead.');
 }
+
+
 
 function sendEmail() {
     window.location.href = 'mailto:Contact@mno90.com?subject=Hello&body=I wanted to reach out to you...'; // Replace with your email address, subject, and body
